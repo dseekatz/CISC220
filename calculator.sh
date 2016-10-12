@@ -6,7 +6,7 @@
 echo "This is a simple calculator tool.  You can enter \":q\" at any time to exit."
 read -p "Please enter a number: " num1
 
-# The user can type :q at any time and the program will terminate
+# The user can type :q at any time after the first input and the program will terminate
 while true ; do
 	while ! [[ $num1 =~ ^-?[0-9]+$ ]] ; do		# Check if the input is an integer
 		echo "$num1 is not a number"
