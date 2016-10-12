@@ -1,4 +1,5 @@
 #!/bin/bash
+
 #This program for question 2 will print out and identify the current IP address of the system.
 #Completed by Simon Ungar, Wednesday Oct 12th
 #v1.1
