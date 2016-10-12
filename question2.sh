@@ -1,9 +1,16 @@
 #!/bin/bash
+#This program for question 2 will print out and identify the current IP address of the system.
+#Completed by Simon Ungar, Wednesday Oct 12th
+#v1.1
 
+#This first line gets the IP addresses by piping ifconfig into grep, searching for the characters that come before the IP address, and then using awk to isolate just the IPs.
 ips=$(ifconfig | grep 'addr:1' | awk -F'[: ]+' '{ print $4}')
 
+
+#The IP's are put into an array, so that they can be iterated through
 separateIPs=$(echo $ips | tr " " "\n")
 
+#for loop runs through each IP address, and then identifies whether or not it is Private, Local or public. 
 for addr in $separateIPs
 	do
 		if [[ $addr == 10* ]]; then
