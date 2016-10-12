@@ -1,8 +1,9 @@
 question 4
 #!/bin/bash
-//first check if the directory exists, then creates new file every time it runs
 
-if [ -d "$DIRECTORY"]; then
-touch /path/to/file
-fi
+#While the directory exists, create a new file each time to store the latest permissions
+while [-d "$DIRECTORY"]; 
+do touch /path/to/file
+done
 
+ 
