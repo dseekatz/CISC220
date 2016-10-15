@@ -11,7 +11,7 @@ for i in $(seq $input);
 do
         echo "User $i press $i to move forward"
         ${users[i]}="|->"
-        {spaces[i]}=40
+        ${spaces[i]}=40
 done
 
 continue=0
@@ -19,7 +19,7 @@ continue=0
 while ((${continue}==0)) ; do
 
         for i in $(seq $input); do
-		if [spaces[$i] == 0]; then
+		if [${spaces[$i]} == 0]; then
                         continue=1
                 fi
         done
@@ -33,7 +33,7 @@ while ((${continue}==0)) ; do
         do
         	echo "User $i press $i to move forward"
                 if [$num == $i]; then
-                        users[$i]="~users[$i]"
+                        ${users[$i]}="~${users[$i]}"
                         spaces[$i]=((spaces[$i]-1))
                         line=$(printf "%-${spaces[$i]}s" " ")
                         echo "users[$i]" "$line# Lane $i"
