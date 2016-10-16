@@ -18,11 +18,6 @@ continue=0
 
 while (( ${continue} == 0 )) ; do
 
-        for i in $(seq $input); do
-		if (( ${#users[$i]} == 43 )); then
-                        continue=1
-                fi
-        done
 
 
         read num
@@ -38,6 +33,13 @@ while (( ${continue} == 0 )) ; do
                 fi
 	line=$(printf "%-${spaces[$i]}s" " ")
         echo "users[$i]" "$line# Lane $i"
+        done
+	
+	
+	for i in $(seq $input); do
+		if (( ${#users[$i]} == 43 )); then
+                        continue=1
+                fi
         done
 done
 for i in $(seq $users) do
