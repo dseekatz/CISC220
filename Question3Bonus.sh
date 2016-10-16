@@ -33,7 +33,7 @@ while (( ${continue} == 0 )) ; do
 	for i in $(seq $input);
 	do
 		line=$(printf "%-${spaces[$i]}s" " ")
-       		echo "users[$i]" "$line# Lane $i"
+       		echo "${users[$i]}" "$line# Lane $i"
 	done
 	
 	read num
