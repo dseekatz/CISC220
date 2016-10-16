@@ -16,7 +16,7 @@ done
 
 continue=0
 
-while (( {$continue} == 0 )) ; do
+while (( ${continue} == 0 )) ; do
 
         for i in $(seq $input); do
 		if [${#users[$i]} == 43]; then
