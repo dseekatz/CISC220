@@ -1,13 +1,19 @@
 #!/bin/bash
+
+#clearing screen and requesting user for input
+#will work with any number of users but is really only fun when there is one digit as an input. Recommend only 2-9 players.
 clear
 echo "Welcome to CISC220 Racing Arena"
 echo "How many players?"
 
 read input
 
+
 users=()
 spaces=()
 
+#setting arrays with information about each user
+# each indice represents each user
 for i in $(seq $input); 
 do
         echo "User $i press $i to move forward"
@@ -17,6 +23,7 @@ done
 
 continue=0
 
+#condition for while loop is checked after each iteration
 while (( ${continue} == 0 )) ; do
 	clear
         echo "Welcome to CISC220 Racing Arena"
@@ -26,6 +33,7 @@ while (( ${continue} == 0 )) ; do
         	echo "User $i press $i to move forward"
 	done
 	
+	#prints the "race lanes"
 	for i in $(seq $input);
 	do
 		line=$(printf "%-${spaces[$i]}s" " ")
@@ -34,6 +42,7 @@ while (( ${continue} == 0 )) ; do
 	
 	read num
 	
+	#modified the arrays based on user input. ie: pushes a car forward
 	users[$num]="~${users[$num]}"
 	spaces[$num]=$((spaces[$num]-1))
 	
@@ -43,6 +52,7 @@ while (( ${continue} == 0 )) ; do
                 fi
         done
 done
+#checking for winner
 for i in $(seq $input); do
 	var=${users[$i]}
 	if (( ${#var} == 43 )); then
