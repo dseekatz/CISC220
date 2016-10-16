@@ -3,5 +3,5 @@ Names and Student IDs for group members
 https://github.com/dseekatz/CISC220_1.git
 
 David Seekatz				16das4 20037710
-Sean Eylott				13se18
-Sujay Nagaraj     13sn49 10133356
+Sean Eylott				13se18 10141657
+Sujay Nagaraj     			13sn49 10133356
