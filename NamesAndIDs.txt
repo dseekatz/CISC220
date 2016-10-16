@@ -3,3 +3,4 @@ Names and Student IDs for group members
 https://github.com/dseekatz/CISC220_1.git
 
 David Seekatz				16das4
+Sean Eylott				13se18
