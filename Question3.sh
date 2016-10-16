@@ -1,7 +1,7 @@
 #!/bin/bash
 #This program is a car racing game between 3 players
 #The game takes an input from the keyboard(1, 2 or 3) and moves the appropriate car one spot
-#The first car to reach the end, wins!
+#The first car to reach the end wins!
 
 #Output to the user explaining how the game works
 echo "Welcome to CISC220 Racing Arena"
