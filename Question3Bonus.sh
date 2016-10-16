@@ -19,7 +19,7 @@ continue=0
 while (( ${continue} == 0 )) ; do
 
         for i in $(seq $input); do
-		if [${#users[$i]} == 43]; then
+		if (( ${#users[$i]} == 43 )); then
                         continue=1
                 fi
         done
@@ -32,7 +32,7 @@ while (( ${continue} == 0 )) ; do
         for i in $(seq $users);
         do
         	echo "User $i press $i to move forward"
-                if [[${num} == $i]]; then
+                if (( ${num} == $i )); then
                         users[$i]="~${users[$i]}"
                         spaces[$i]=$((spaces[$i]-1))
                         line=$(printf "%-${spaces[$i]}s" " ")
@@ -42,7 +42,7 @@ while (( ${continue} == 0 )) ; do
 done
 for i in $(seq $users) do
 
-        if [[ ${#users[$i]} == 43 ]]; then
+        if (( ${#users[$i]} == 43 )); then
                 echo "Player $i Wins!"
         fi
 done
