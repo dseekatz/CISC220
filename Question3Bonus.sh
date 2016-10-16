@@ -34,7 +34,7 @@ while (({$continue}==0)) ; do
         	echo "User $i press $i to move forward"
                 if [[${num} == $i]]; then
                         users[$i]="~${users[$i]}"
-                        spaces[$i]=((spaces[$i]-1))
+                        spaces[$i]=$((spaces[$i]-1))
                         line=$(printf "%-${spaces[$i]}s" " ")
                         echo "users[$i]" "$line# Lane $i"
                 fi
