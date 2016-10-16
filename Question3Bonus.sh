@@ -43,7 +43,7 @@ while (( ${continue} == 0 )) ; do
                 fi
         done
 done
-for i in $(seq $users) do
+for i in $(seq $input) do
 
         if (( ${#users[$i]} == 43 )); then
                 echo "Player $i Wins!"
