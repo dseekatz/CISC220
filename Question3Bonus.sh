@@ -30,7 +30,7 @@ while (( ${continue} == 0 )) ; do
                 #fi
 	done
 	
-	for i in $seq $input);
+	for i in ($seq $input);
 	do
 		line=$(printf "%-${spaces[$i]}s" " ")
        		echo "users[$i]" "$line# Lane $i"
