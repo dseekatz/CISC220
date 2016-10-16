@@ -47,9 +47,6 @@ for i in $(seq $input); do
 	var=${users[$i]}
 	if (( ${#var} == 43 )); then
 		echo "Player $i Wins!"
+		break
 	fi
-
-        #if (( ${#${users[$i]}} == 43 )); then
-                echo "Player $i Wins!"
-        #fi
 done
