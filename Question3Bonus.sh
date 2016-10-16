@@ -27,7 +27,7 @@ while (({$continue}==0)) ; do
 
         read num
         clear
-        echo "Welcome to CISC220 Racing Arena""
+        echo "Welcome to CISC220 Racing Arena"
 
         for i in $(seq $users);
         do
@@ -42,7 +42,7 @@ while (({$continue}==0)) ; do
 done
 for i in $(seq $users) do
 
-        if [ ${#users[$i]} == 43 ]; then
+        if [[ ${#users[$i]} == 43 ]]; then
                 echo "Player $i Wins!"
         fi
 done
