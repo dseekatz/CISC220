@@ -21,17 +21,20 @@ while (( ${continue} == 0 )) ; do
 	clear
         echo "Welcome to CISC220 Racing Arena"
 
-        for i in $(seq $users);
+        for i in $(seq $input);
         do
         	echo "User $i press $i to move forward"
                 #if (( ${num} == $i )); then
                         #users[$i]="~${users[$i]}"
                        	#spaces[$i]=$((spaces[$i]-1))
                 #fi
+	done
+	
+	for i in $seq $input);
+	do
 		line=$(printf "%-${spaces[$i]}s" " ")
        		echo "users[$i]" "$line# Lane $i"
 	done
-	
 	
 	read num
 	
