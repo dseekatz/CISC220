@@ -24,10 +24,6 @@ while (( ${continue} == 0 )) ; do
         for i in $(seq $input);
         do
         	echo "User $i press $i to move forward"
-                #if (( ${num} == $i )); then
-                        #users[$i]="~${users[$i]}"
-                       	#spaces[$i]=$((spaces[$i]-1))
-                #fi
 	done
 	
 	for i in $(seq $input);
