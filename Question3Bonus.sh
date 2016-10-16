@@ -35,9 +35,9 @@ while (( ${continue} == 0 )) ; do
                 if (( ${num} == $i )); then
                         users[$i]="~${users[$i]}"
                         spaces[$i]=$((spaces[$i]-1))
-                        line=$(printf "%-${spaces[$i]}s" " ")
-                        echo "users[$i]" "$line# Lane $i"
                 fi
+	line=$(printf "%-${spaces[$i]}s" " ")
+        echo "users[$i]" "$line# Lane $i"
         done
 done
 for i in $(seq $users) do
