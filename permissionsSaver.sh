@@ -10,5 +10,5 @@ while [ -e $targetFile ] ; do
 	fi
 	(( counter=$counter+1 )) ;
 done
-ls -l | awk '{print $1 "\t" $9}' > $targetFile
+ls -l | awk 'NR>1 {print $1 "\t" $9}' > $targetFile
 echo "$targetFile created!"
