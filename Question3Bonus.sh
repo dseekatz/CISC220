@@ -42,7 +42,7 @@ while (({$continue}==0)) ; do
 done
 for i in $(seq $users) do
 
-        if [ ${#car$i} == 43 ]; then
+        if [ ${#users[$i]} == 43 ]; then
                 echo "Player $i Wins!"
         fi
 done
