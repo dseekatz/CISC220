@@ -1,11 +1,20 @@
 #!/bin/bash
 
-if [ "$1" = '-s' ]; then
+if [ "$1" == '-s' ]; then
 echo "OLD" "CURRENT" "FILE"
-	for line in [[ $(diff <($2) <(ls -l | awk NR> 1 {print $1 "\t" $9) ]] ; do	 
+	for line in [[ $(2) ]]; do
+		#create a variable to check the contents of oldpermissions and newpermissions
+		checking = ${$<(ls -lR | awk NR> 1 {print $1 "\t" $9)}	 
 		if [[ grep <* ]]; then #need to extract just the permissions
+			#variable containing the contents of the old permissions
 			oldpermissions =  ${$line:0:10}
+			#compare oldpermissions and checking and output the differences
+			if ["$oldpermissions" != "$checking"]; then
+				echo $oldpermissions 
+			fi
 		else [[ grep >* ]]
+			#variable containing the contents of new permissions
+			#compare newpermissions and checking and output the differences
 			newpermissions = ${$line:0:10}
 			filenames = ${$line:11}
 		fi
@@ -21,7 +30,7 @@ done
 	
 if [ "$1" == 'r ' ]; then
 	for i in `seq ${#filenames[i]} `; do
-	chmod oldpermissions[$i] filenames[$i] 
+	chmod  oldpermissions[$i] filenames[$i] 
 done   
 fi 
 
