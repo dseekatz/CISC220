@@ -1,4 +1,9 @@
 #!/bin/bash
+#David Seekatz    16das4 20037710
+#Sean Eylott      13se18 10141657
+#Sujay Nagaraj    13sn49 10133356
+#Simon Ungar      14seau 10149546
+#Brooke Resendes  13brr2 10141112
 
 #This program for question 2 will print out and identify the current IP address of the system.
 #Completed by Simon Ungar, Wednesday Oct 12th
