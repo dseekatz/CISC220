@@ -1,4 +1,9 @@
 #!/bin/bash
+#David Seekatz    16das4 20037710
+#Sean Eylott      13se18 10141657
+#Sujay Nagaraj    13sn49 10133356
+#Simon Ungar      14seau 10149546
+#Brooke Resendes  13brr2 10141112
 
 #clearing screen and requesting user for input
 #will work with any number of users but is really only fun when there is one digit as an input. Recommend only 2-9 players.
