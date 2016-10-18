@@ -1,4 +1,9 @@
 #!/bin/bash
+#David Seekatz    16das4 20037710
+#Sean Eylott      13se18 10141657
+#Sujay Nagaraj    13sn49 10133356
+#Simon Ungar      14seau 10149546
+#Brooke Resendes  13brr2 10141112
 
 if [ "$1" == '-s' ]; then
 echo "OLD" "CURRENT" "FILE"
