@@ -1,4 +1,10 @@
 #!/bin/bash
+#David Seekatz    16das4 20037710
+#Sean Eylott      13se18 10141657
+#Sujay Nagaraj    13sn49 10133356
+#Simon Ungar      14seau 10149546
+#Brooke Resendes  13brr2 10141112
+
 #This program is a car racing game between 3 players
 #The game takes an input from the keyboard(1, 2 or 3) and moves the appropriate car one spot
 #The first car to reach the end wins!
