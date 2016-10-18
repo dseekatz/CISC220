@@ -1,4 +1,9 @@
 #!/bin/bash
+#David Seekatz    16das4 20037710
+#Sean Eylott      13se18 10141657
+#Sujay Nagaraj    13sn49 10133356
+#Simon Ungar      14seau 10149546
+#Brooke Resendes  13brr2 10141112
 
 # A simple script that functions as a running calculator. It prompts the user to input a number, an operator,
 # and another number. It then performs the chosen operation and prompts the user for another operator and number, etc.
